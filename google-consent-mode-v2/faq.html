@@ -1,6 +1,8 @@
 <div>
     <details style="border: 1px solid #efefef;padding: 1em;">
-        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">The module does not work correctly with the Lightning module</summary>
+        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">
+            The module does not work correctly with the Lightning module
+        </summary>
         <div style="padding-top: 1rem;">
             <strong>Just add to exclusions:</strong>
             <ul>
@@ -12,10 +14,40 @@
     </details>
 
     <details style="border: 1px solid #efefef;padding: 1em;">
-        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">The module does not work correctly with the Journal 3 theme</summary>
+        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">
+            The module does not work correctly with the Journal 3 theme
+        </summary>
         <div style="padding-top: 1rem;">
             <strong>Just disable JS defer:</strong><br>
             <img src="https://raw.githubusercontent.com/and-ri/opencart-modules-readme/refs/heads/main/google-consent-mode-v2/journal.png" alt="Journal" style="max-width: 100%;height: auto;">
+        </div>
+    </details>
+
+    <details style="border: 1px solid #efefef;padding: 1em;">
+        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">
+            After installing the module, the number of sessions in Google Analytics decreased
+        </summary>
+        <div style="padding-top: 1rem;">
+            <p>A drop in reported traffic in Google Analytics after implementing Consent Mode is normal and expected. Google Analytics only starts tracking a user after they have given explicit consent for the use of cookies. If a user declines or simply doesn't interact with the consent banner, their session won't be included in your analytics data.</p>
+            <p>This behavior is in line with modern privacy regulations like GDPR and ePrivacy, and ensures compliance with legal requirements.</p>
+        </div>
+    </details>
+
+    <details style="border: 1px solid #efefef;padding: 1em;">
+        <summary style="font-size: 1.2em;font-weight: 600;cursor: pointer;">
+            Can I set the default consent to “granted” without user interaction?
+        </summary>
+        <div style="padding-top: 1rem;">
+            <p><strong>No, and here's why:</strong></p>
+            <p>Setting consent to "granted" by default — without user interaction — violates modern privacy regulations like <strong>GDPR</strong> (EU), <strong>ePrivacy</strong>, and similar laws in other regions (such as California's CCPA/CPRA).</p>
+            <p>These laws require that users explicitly opt in to the use of non-essential cookies (such as those used for tracking and advertising).</p>
+            <p>If you pre-grant consent without asking the user, you risk:</p>
+            <ul>
+                <li>Violating legal requirements</li>
+                <li>Being penalized or fined by regulatory authorities</li>
+                <li>Losing user trust</li>
+            </ul>
+            <p>The purpose of Consent Mode is to help you stay compliant by only activating tags once the user agrees. While this may reduce the number of tracked sessions, it protects you legally and aligns with best practices.</p>
         </div>
     </details>
 </div>
